@@ -4,7 +4,7 @@ $(document).ready(function () {
     navigator.geolocation.getCurrentPosition(async function (position) {
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
-      const apiKey = "465ad6304f12419481b476deed2c4188";
+      const apiKey = "YOUR_API_KEY";
       const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly&appid=${apiKey}&units=metric`;
 
       try {
