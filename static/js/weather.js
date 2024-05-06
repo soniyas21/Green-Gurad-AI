@@ -6,7 +6,7 @@ $(document).ready(function () {
       var lon = position.coords.longitude;
       // Fetch current weather based on geolocation
       $.getJSON(
-        "https://api.weatherapi.com/v1/current.json?key=972be9a2469c4754835105331242102&q=" +
+        "https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=" +
           lat +
           "," +
           lon,
